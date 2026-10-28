@@ -100,6 +100,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ДоступностьПродукции</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ПродажиЗаПериод</name>
 		<right>
 			<name>Use</name>

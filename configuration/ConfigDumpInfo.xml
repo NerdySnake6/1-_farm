@@ -50,6 +50,7 @@
 			<Metadata name="Document.Бронирование.TabularSection.Товары.Attribute.Количество" id="b90cf919-ad48-5a2a-8e4b-ab9344d1949c"/>
 			<Metadata name="Document.Бронирование.TabularSection.Товары.Attribute.Номенклатура" id="bfb26c53-90a8-53b4-afe7-d08726126b88"/>
 			<Metadata name="Document.Бронирование.Attribute.Склад" id="c7ecb30f-4068-5f1a-a6ad-19c4e1946698"/>
+			<Metadata name="Document.Бронирование.Attribute.СрокБрони" id="55bf4b7d-cd4e-5f89-934a-6da36993f312"/>
 			<Metadata name="Document.Бронирование.Attribute.Покупатель" id="d477b9c6-de11-5f42-aa02-c8d58eaca382"/>
 		</Metadata>
 		<Metadata name="Document.Бронирование.Form.Форма" id="e187b7d0-37c1-5d7e-a7dc-31858cf3e883" configVersion="541e2b6351adeb4cab6e1390a1593f1200000000"/>
@@ -87,6 +88,10 @@
 			<Metadata name="InformationRegister.Цены.Dimension.Номенклатура" id="956246c8-2eb5-5a73-9c07-5c2bc3efb20d"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="65fdc585-28d2-46f5-9860-902d7539e287" configVersion="ae818e338d8d884085ee1311adf4051200000000"/>
+		<Metadata name="Report.ДоступностьПродукции" id="d8ee03f3-e49b-57c5-8afe-9bba79fe334a" configVersion="a1d4f0e2c3b5678901234abcdef5678900000000">
+			<Metadata name="Report.ДоступностьПродукции.Form.Форма" id="14e91348-f5bc-5ca7-bc51-578b7da04ae4" configVersion="b2e5a1f3c4b6789012345abcdef6789000000000"/>
+			<Metadata name="Report.ДоступностьПродукции.Form.Форма.Form" id="14e91348-f5bc-5ca7-bc51-578b7da04ae4.0" configVersion="c3f6b2a4d5c7890123456abcdef7890100000000"/>
+		</Metadata>
 		<Metadata name="Report.ОстаткиПродукции" id="3d6ac262-c1e0-5afe-85fc-03fecbb9e5b8" configVersion="c8500fe8a6bc424983d817f22ef73c7700000000"/>
 		<Metadata name="Report.ОстаткиПродукции.Form.Форма" id="dcb38c46-3b23-5671-96db-a753d617f0b7" configVersion="cf9755bfb64b804d939b4f2ae294748800000000"/>
 		<Metadata name="Report.ОстаткиПродукции.Form.Форма.Form" id="dcb38c46-3b23-5671-96db-a753d617f0b7.0" configVersion="d867b80cdc94704eb2652d5a398c35b000000000"/>
@@ -99,6 +104,7 @@
 		<Metadata name="Role.ПолныеПрава.Rights" id="0a7be55d-9e12-5548-be16-c384d5f047f4.0" configVersion="8e2b8e9af278004487fd63ea24db13ba00000000"/>
 		<Metadata name="Role.Продажа" id="070ed5fc-6316-5c91-822f-eb68b95c20d1" configVersion="61a811862e781a4ba5183f64ba3cd6f800000000"/>
 		<Metadata name="Role.Продажа.Rights" id="070ed5fc-6316-5c91-822f-eb68b95c20d1.0" configVersion="9ba616d0aa7a7f4a9c5c8f45012911e500000000"/>
+		<Metadata name="ScheduledJob.СнятьПросроченныеБрони" id="74e1e079-4e38-5900-9de2-b56e6f11df77" configVersion="d4a7c3b5e6d8901234567abcdef8901200000000"/>
 		<Metadata name="Style.Луговой" id="c88219a1-d29c-5f81-b6f6-31eab528efcc" configVersion="b81bb64f6e74c346a8b032d2096a8dc700000000"/>
 		<Metadata name="Subsystem.Покупка" id="22042c85-8da5-5b52-9164-9614cb986a6c" configVersion="faa42d2b54e86843bf3ffd2d9d010c4b00000000"/>
 		<Metadata name="Subsystem.Продажа" id="97e2b442-00e3-5313-b9cd-d451758c552e" configVersion="e8f1bd706823a2488a977c92873a870300000000"/>

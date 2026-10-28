@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ScheduledJob uuid="74e1e079-4e38-5900-9de2-b56e6f11df77">
+		<Properties>
+			<Name>СнятьПросроченныеБрони</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять просроченные брони</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Отменяет проведение бронирований с истёкшим сроком.</Comment>
+			<MethodName>CommonModule.УчетФермы.СнятьПросроченныеБрони</MethodName>
+			<Description/>
+			<Key>СнятьПросроченныеБрони</Key>
+			<Use>true</Use>
+			<Predefined>true</Predefined>
+			<RestartCountOnFailure>3</RestartCountOnFailure>
+			<RestartIntervalOnFailure>10</RestartIntervalOnFailure>
+		</Properties>
+	</ScheduledJob>
+</MetaDataObject>
