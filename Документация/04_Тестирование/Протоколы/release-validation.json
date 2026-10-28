@@ -1,0 +1,20 @@
+{
+  "configuration_version": "1.2.0",
+  "platform": "8.3.27.1688",
+  "date": "2026-10-23",
+  "unique_pass_counts": {
+    "runtime-tests.txt": 21,
+    "form-tests.txt": 10,
+    "role-Покупка.txt": 9,
+    "role-Продажа.txt": 9,
+    "reservation-tests.txt": 28,
+    "reservation-form-tests.txt": 6
+  },
+  "total": 83,
+  "restored_dt_checks_repeated": true,
+  "mouse_clicks_automated": false,
+  "deliverables_sha256": {
+    "deliverables/Farm_Lugovaya_v1.2.0.dt": "76ec19b9f2bbf9ccaca6fa60b6460f666b0e28441d258c8bd50c962e4dad5c9d",
+    "deliverables/Farm_Lugovaya_v1.2.0.cf": "f08f7f8f0f3694bc9803e812c1fbce2509e3f845ef8a5862539b8f8a941b19ec"
+  }
+}

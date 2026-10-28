@@ -1,0 +1,37 @@
+{
+  "configuration_version": "1.2.0",
+  "platform_version": "8.3.27.1688",
+  "author": "Калинин Игорь Вячеславович",
+  "test_date": "2026-10-23",
+  "checks": {
+    "accounting": 21,
+    "forms": 10,
+    "purchase_role": 9,
+    "sales_role": 9,
+    "reservations": 28,
+    "reservation_forms": 6
+  },
+  "control_example": {
+    "receipt": [
+      100,
+      20,
+      15
+    ],
+    "sale": [
+      25,
+      5,
+      3
+    ],
+    "stock": [
+      75,
+      15,
+      12
+    ],
+    "prices": [
+      90,
+      360,
+      280
+    ],
+    "sales_total": 4890
+  }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "file": "01-main-resumed.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/01-main-resumed.png"
+  },
+  {
+    "file": "02-purchase.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/02-purchase.png"
+  },
+  {
+    "file": "03-sales.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/03-sales.png"
+  },
+  {
+    "file": "report-resume.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/report-resume.png"
+  },
+  {
+    "file": "booking-saved-unposted.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/booking-saved-unposted.png"
+  },
+  {
+    "file": "report-unposted.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/report-unposted.png"
+  },
+  {
+    "file": "booking-posted-clean.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/booking-posted-clean.png"
+  },
+  {
+    "file": "report-booked.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/report-booked.png"
+  },
+  {
+    "file": "booking-journal-clean.png",
+    "version": "1.2.0",
+    "role": "Администратор",
+    "run": "RUN-20261024-01",
+    "source": "Документация/04_Тестирование/Протоколы/Ручные/RUN-20261024-01/booking-journal-clean.png"
+  }
+]

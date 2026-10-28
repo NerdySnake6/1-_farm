@@ -1,0 +1,10 @@
+# Сохранять исходный формат выгрузки платформы 1С, включая CRLF и BOM.
+configuration/** -text whitespace=cr-at-eol
+*.bsl -text whitespace=cr-at-eol
+Документация/04_Тестирование/Протоколы/*.txt -text whitespace=cr-at-eol
+
+*.cf binary
+*.dt binary
+*.docx binary
+*.pptx binary
+*.png binary
