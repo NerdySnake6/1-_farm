@@ -21,6 +21,9 @@ TITLES = [
     'Приложение Г1 Результаты перепроверки',
     'Приложение Д Разделы конфигурации',
     'Приложение Д1 Интерфейс рабочих ролей',
+    'Приложение Е Ручная перепроверка',
+    'Приложение Е1 Продажа и бронь',
+    'Приложение Е2 Продажа по брони',
 ]
 
 
@@ -246,6 +249,8 @@ def update():
     screenshot(document, 'MA02-purchase-role.png', 440, 'Рисунок Д.3 Рабочий стол пользователя Покупка')
     screenshot(document, 'MA02-sales-role.png', 505, 'Рисунок Д.4 Рабочий стол пользователя Продажа')
     screenshot(document, 'MA02-admin-role.png', 590, 'Рисунок Д.5 Рабочий стол Администратора с обоими разделами')
+    from manual_recheck_report import apply
+    apply(document, page, screenshot)
     add_contents(document)
     finish_layout(document)
     document.core_properties.last_modified_by = 'Калинин Игорь Вячеславович'
