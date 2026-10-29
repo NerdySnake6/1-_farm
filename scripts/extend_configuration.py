@@ -269,7 +269,7 @@ def add_roles():
             rights += grant('Catalog.'+cat,names)
         for doc, owner in [('Приход','Покупка'),('Расход','Продажа')]:
             if role in [owner,'ПолныеПрава']:
-                rights += grant('Document.'+doc,['Read','View','Insert','Update','Edit','Posting','UndoPosting','InteractiveInsert','InteractivePosting','InteractivePostingRegular','InteractiveUndoPosting','InteractiveSetDeletionMark','InteractiveClearDeletionMark'] + (['Delete','InteractiveDelete'] if role=='ПолныеПрава' else []))
+                rights += grant('Document.'+doc,['Read','View','Insert','Update','Edit','Posting','UndoPosting','InteractiveInsert','InteractivePosting','InteractivePostingRegular','InteractiveUndoPosting','InteractiveChangeOfPosted','InteractiveSetDeletionMark','InteractiveClearDeletionMark'] + (['Delete','InteractiveDelete'] if role=='ПолныеПрава' else []))
         rights += grant('CommonForm.РабочийСтол',['View'])
         for section in ['Покупка', 'Продажа']:
             if role in [section, 'ПолныеПрава']:

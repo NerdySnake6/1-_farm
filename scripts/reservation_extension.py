@@ -19,7 +19,7 @@ def install(extension):
     booking = base.obj('Document', 'Бронирование', properties, ''.join(base.attr('Бронирование', name, typ) for name, typ in attributes) + tab, synonym='Бронирование продукции')
     dimensions = [('Организация', 'cfg:CatalogRef.Организации'), ('Склад', 'cfg:CatalogRef.Склады'), ('Номенклатура', 'cfg:CatalogRef.Номенклатура'), ('Бронирование', 'cfg:DocumentRef.Бронирование')]
     register = base.obj('AccumulationRegister', 'РезервыПродукции', '<RegisterType>Balance</RegisterType><EnableTotalsSplitting>true</EnableTotalsSplitting>', ''.join(base.attr('Резервы', name, typ, 'Dimension') for name, typ in dimensions) + base.attr('Резервы', 'Количество', 'number', 'Resource'), synonym='Резервы продукции')
-    metadata.write_text(source.replace('<Version>1.1.1</Version>', '<Version>1.2.0</Version>').replace('</ChildObjects>', booking + register + '</ChildObjects>', 1))
+    metadata.write_text(source.replace('<Version>1.1.1</Version>', '<Version>1.2.1</Version>').replace('</ChildObjects>', booking + register + '</ChildObjects>', 1))
     sale = sale.replace('</RegisterRecords>', '<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РезервыПродукции</xr:Item></RegisterRecords>', 1)
     sale = sale.replace('<ChildObjects>', '<ChildObjects>' + base.attr('Расход', 'Бронирование', 'cfg:DocumentRef.Бронирование'), 1)
     sale_metadata.write_text(sale)
@@ -74,7 +74,7 @@ def install(extension):
         rights = path.read_text()
         booking_rights = ['Read', 'View'] if role in ['Продажа', 'ПолныеПрава'] else []
         if role in ['Продажа', 'ПолныеПрава']:
-            booking_rights += ['Insert', 'Update', 'Edit', 'Posting', 'UndoPosting', 'InteractiveInsert', 'InteractivePosting', 'InteractivePostingRegular', 'InteractiveUndoPosting']
+            booking_rights += ['Insert', 'Update', 'Edit', 'Posting', 'UndoPosting', 'InteractiveInsert', 'InteractivePosting', 'InteractivePostingRegular', 'InteractiveUndoPosting', 'InteractiveChangeOfPosted']
         if role == 'ПолныеПрава':
             booking_rights += ['Delete', 'InteractiveDelete']
         def grant(ref, names):

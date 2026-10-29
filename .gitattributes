@@ -2,6 +2,7 @@
 configuration/** -text whitespace=cr-at-eol
 *.bsl -text whitespace=cr-at-eol
 Документация/04_Тестирование/Протоколы/*.txt -text whitespace=cr-at-eol
+Документация/04_Тестирование/Протоколы/**/*.txt -text whitespace=cr-at-eol
 
 *.cf binary
 *.dt binary

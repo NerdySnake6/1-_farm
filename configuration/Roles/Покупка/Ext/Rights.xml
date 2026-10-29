@@ -212,6 +212,10 @@
 			<name>InteractiveUndoPosting</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Поставщики</name>
