@@ -1,5 +1,6 @@
 """Build a sequential user guide without duplicated workflows."""
 import document_reservations
+from add_booking_screenshots import append_screenshots
 import document_refresh
 from document_common import add_contents, cover, new_document, page, paragraph, save_document, table
 from document_screenshots import add_cropped_screenshot
@@ -141,6 +142,7 @@ def build():
     paragraph(doc,'Резервное копирование и загрузку выгрузок выполняет администратор. DT заменяет содержимое выбранной базы и не используется для повседневного оформления операций. Если требуется восстановление, сначала сохраните текущую базу и согласуйте действия с ответственным.')
     document_reservations.user(doc)
     document_refresh.user(doc)
+    append_screenshots(doc, 'user')
     add_contents(doc,[p.text for p in doc.paragraphs if p.style.name=='Heading 1'])
     save_document(doc,'user','Инструкция пользователя Молочная ферма Луговая')
 

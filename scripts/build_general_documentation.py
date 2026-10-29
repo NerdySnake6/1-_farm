@@ -1,5 +1,6 @@
 """Build the consolidated project report with a linked contents page."""
 from pathlib import Path
+from add_booking_screenshots import append_screenshots, extend_contents
 import document_reservations
 
 from docx import Document
@@ -354,6 +355,8 @@ def build():
     add_cropped_screenshot(document, 'Остатки.png', (1906, 840), (875, 530, 1752, 680), 'Остатки контрольного примера', width=6.6)
     paragraph(document, 'Рисунок А.2 Фрагмент отчёта по остаткам')
     paragraph(document, 'Остатки составляют 75 л молока, 15 кг творога и 12 кг сметаны. Снимок ранней версии показывает складское количество. В отчёте 1.2.0 дополнительно выводятся резерв и свободный остаток.')
+
+    extend_contents(document, append_screenshots(document, 'general'))
 
     document.core_properties.title = 'Общая документация Молочная ферма Луговая'
     document.core_properties.author = AUTHOR
