@@ -49,6 +49,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ДоступностьПродукции</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ОстаткиПродукции</name>
 		<right>
 			<name>Use</name>
@@ -199,6 +210,10 @@
 		</right>
 		<right>
 			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
 			<value>true</value>
 		</right>
 	</object>

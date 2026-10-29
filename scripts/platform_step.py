@@ -12,7 +12,9 @@ def main():
     """Dispatch an explicit development or export operation to Designer."""
     action = sys.argv[1]
     log = ROOT / '.build' / f'ui-{action}.log'
-    restore_file = ROOT / 'deliverables/Farm_Lugovaya_v1.2.0.dt'
+    restore_file = ROOT / 'deliverables/Farm_Lugovaya_v1.2.1.dt'
+    if not restore_file.exists():
+        restore_file = ROOT / 'deliverables/Farm_Lugovaya_v1.2.0.dt'
     if not restore_file.exists():
         restore_file = ROOT / 'deliverables/Farm_Lugovaya_v1.1.1.dt'
     if not restore_file.exists():
@@ -24,8 +26,8 @@ def main():
         'load': ['/LoadConfigFromFiles', str(ROOT/'configuration')],
         'update': ['/UpdateDBCfg'],
         'check': ['/CheckConfig', '-Server', '-ThinClient', '-ThickClientManagedApplication'],
-        'cf': ['/DumpCfg', str(ROOT/'deliverables/Farm_Lugovaya_v1.2.0.cf')],
-        'dt': ['/DumpIB', str(ROOT/'deliverables/Farm_Lugovaya_v1.2.0.dt')],
+        'cf': ['/DumpCfg', str(ROOT/'deliverables/Farm_Lugovaya_v1.2.1.cf')],
+        'dt': ['/DumpIB', str(ROOT/'deliverables/Farm_Lugovaya_v1.2.1.dt')],
         'source': ['/DumpConfigToFiles', str(ROOT/'.build/ui-source')],
     }
     if action == 'create':

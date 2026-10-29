@@ -19,6 +19,8 @@ __pycache__/
 /deliverables/*
 !/deliverables/Farm_Lugovaya_v1.2.0.dt
 !/deliverables/Farm_Lugovaya_v1.2.0.cf
+!/deliverables/Farm_Lugovaya_v1.2.1.dt
+!/deliverables/Farm_Lugovaya_v1.2.1.cf
 /Документация/Архив/
 
 # Журналы управления и промежуточные снимки не публикуются.

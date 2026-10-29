@@ -139,7 +139,13 @@ def protocol_links(document):
 
 
 def build():
-    """Generate the report and verify that it accounts for all 83 checks."""
+    """Preserve recorded manual results or generate the historical report."""
+    if OUTPUT.exists():
+        existing = Document(OUTPUT)
+        if any(item.text == 'Приложение Г Проверка исправлений' for item in existing.paragraphs):
+            from update_testing_report_121 import verify_protocols
+            verify_protocols()
+            return
     checks = {name: read_results(name) for name in [
         'runtime-tests.txt', 'form-tests.txt', 'role-Покупка.txt', 'role-Продажа.txt'
     ]}

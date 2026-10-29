@@ -1,0 +1,1 @@
+﻿Создание информационной базы ("File="/Users/nerdysnake6/Documents/1C_ферма/.build/testing-documentation-20261029/run/base";Locale="ru_RU";") успешно завершено

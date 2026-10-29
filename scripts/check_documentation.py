@@ -77,7 +77,7 @@ def check(pending_package=False):
     assert [a - b for a, b in zip(example['receipt'], example['sale'])] == example['stock']
     assert sum(a * b for a, b in zip(example['sale'], example['prices'])) == example['sales_total'] == 4890
     source = etree.parse(str(ROOT / 'configuration/Configuration.xml'))
-    assert source.xpath('//*[local-name()="Version"]/text()') == [FACTS['configuration_version']]
+    assert source.xpath('//*[local-name()="Version"]/text()') == [FACTS.get('source_configuration_version', FACTS['configuration_version'])]
     with ZipFile(OUTPUTS['presentation']) as package:
         slides = [name for name in package.namelist() if re.fullmatch(r'ppt/slides/slide\d+.xml', name)]
         notes = [name for name in package.namelist() if re.fullmatch(r'ppt/notesSlides/notesSlide\d+.xml', name)]
